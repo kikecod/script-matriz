@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>primera aplicación con JS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sum">
+            <form id="sumForm" onsubmit="return false;">
+            <label for="aNumber">Ingrese a:</label>
+            <input id="aNumber" type="number" placeholder="Ej. 1">
+            <label for="bNumber">Ingrese b:</label>
+            <input id="bNumber" type="number" placeholder="Ej. 2">
+            <button type="button" onclick="sum()">Resolver</button>
+        </form></div>
+        <br>
+        <p><strong>Este es el resultado: </strong><span id="result"></span></p>
+        <div class="matrices">
+            <div class="matriz1">
+                <form id="matrizexa" onsubmit="return false;">
+                    <label for="aMatrizNumber">Ingrese a:</label>
+                    <input id="aMatrizNumber" type="number" placeholder="Ej. 2">
+                    <button type="button" onclick="matriz(document.getElementById('aMatrizNumber').value)">Resolver</button>
+                </form>
+                <p><strong>Este es el resultado: </strong><span id="resultMatriz"></span></p>
+            </div>
+            <div class="matriz2">
+                <form id="matriz2" onsubmit="return false;">
+                    <label for="bMatrizNumber">Ingrese b:</label>
+                    <input id="bMatrizNumber" type="number" placeholder="Ej. 3">
+                    <button type="button" onclick="matriz2(document.getElementById('bMatrizNumber').value)">Resolver</button>
+                </form>
+                <p><strong>Este es el resultado: </strong><span id="resultMatriz2"></span></p>
+            </div>
+            <div class="matriz3"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
